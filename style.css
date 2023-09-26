@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+h1 {
+    margin: 0;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.team {
+    text-align: center;
+}
+.project-info {
+    text-align: justify;
+}
+
+
+
+/* Updated header,    9.23.2023 */
+header ul {
+    list-style-type: none;
+    display: flex; /* Make the ul element a flex container */
+    flex-direction: column; /* Arrange the li elements in a column */
+    align-items: center; /* Center the li elements horizontally */
+    justify-content: center;
+    padding: 0%;
+}
+
+header ul li {
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 5px; /* Rounded corners, keep with previous border-radius */
+    margin: 1vh 0; 
+    padding: 10px; 
+    width: 25vw;
+    transition: 0.5s;
+    
+}
+
+/* Style the links within the list items */
+header ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #007bff;
+    transition: 0.5s;
+    
+}
+
+
+header ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+
+
+header ul li:hover a {
+    color: #ff5733; /* Change the link color on hover */
+    transition: 0.5s;
+}
+
+
+
+
+
+/* added cards for team  9.24.2023 */
+
+.cardContainer {
+    display: flex; /* Make the ul element a flex container */
+    flex-direction: row; /* Arrange the li elements in a column */
+    align-items: center; /* Center the li elements horizontally */
+    padding: 0%;
+    justify-content: space-around
+}
+
+.card {
+    /* Add some shadow effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20vw;
+    height: 8vw;
+    /* Center the card */
+    margin: 1vw;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1vw;
+    color: gray;
+}
+
+/* .card-link {
+    font-size: 16px;
+    color: blue;
+} */
+
+
+/* favorite colors?
+john henery - green
+john - orange
+nagato - black
+jaxon - blue
+taylor red */
+
+.JHM:hover{
+    background-color: green;
+    transition: 0.5s;
+    
+}
+.JH:hover{
+    background-color: skyblue;
+    transition: 0.5s;
+}
+.JN:hover{
+    background-color: orange;
+    transition: 0.5s;
+}
+.NK:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.TG:hover{
+    background-color: rgb(142, 0, 40);
+    color: white;
+
+    transition: 0.5s;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        flex-direction: column;
+    }
+    .card {
+        width: 60vw;
+        height: 16vw;
+        margin: 2vw;
+        border-radius: 5px;
+    }
+
+    .card-title {
+        font-size: 3vw;
+    }
+
+    .card-subtitle {
+        font-size: 2.5vw;
+    }
+}
+
+
+
